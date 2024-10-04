@@ -5,46 +5,317 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PokeAPI Cards</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .transparente , .card {
-      background-color: rgba(255, 228, 196, 0.486);
-      box-shadow: gray;
-      border: 2px solid rgba(156, 89, 26, 0.473);
-    }
-
-    .card {
-      border: 2px solid rgba(156, 89, 26, 0.473);
-      border-radius: 25px;
-    }
-  </style>
+  <link href="index.css" rel="stylesheet">
 </head>
-
-
 
 <body style="background-size: cover; background-attachment: fixed;">
   <div class="container transparente">
-    <div class="row justify-content-center my-4">
-      <div class="col-auto">
-        <img src="../IMG/PokeAPI Logo.png" alt="PokeAPI Logo" style="width: 250px; height: auto;">
+    <header>
+      <div class="container-fluid">
+        <button class="row justify-content-center"><span class="col-auto">test boton</span></button>
+        <div class="row justify-content-center mb-4">
+          <div class="col-auto">
+            <img src="../IMG/PokeAPI Logo.png" alt="PokeAPI Logo" style="width: 250px; height: auto;">
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col">
-        <a href="poke-details.html" class="text-decoration-none text-dark ">
-          <div class="card h-100">
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
             <div class="card-body text-center">
-              
+              <h5 class="card-title mt-2">Bulbasaur</h5>
+              <p class="card-text">N° #0001</p>
               <div class="imagen-circulo">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" class="card-img-top" alt="Bulbasaur">
               </div>
-              <h5 class="card-title mt-2">Bulbasaur</h5>
-              <p class="card-text">N° #0001</p>
-              <span class="badge bg-success">Planta</span>
-              <span class="badge bg-secondary">Veneno</span>
+              <div class="py-3">
+                <span class="badge bg-success">Planta</span>
+                <span class="badge bg-secondary">Veneno</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
             </div>
           </div>
         </a>
       </div>
+    
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Ivysaur</h5>
+              <p class="card-text">N° #0002</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" class="card-img-top" alt="Ivysaur">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Planta</span>
+                <span class="badge bg-secondary">Veneno</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Venusaur</h5>
+              <p class="card-text">N° #0003</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" class="card-img-top" alt="Venusaur">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Planta</span>
+                <span class="badge bg-secondary">Veneno</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Charmander</h5>
+              <p class="card-text">N° #0004</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" class="card-img-top" alt="Charmander">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-danger">Fuego</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Charmeleon</h5>
+              <p class="card-text">N° #0005</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" class="card-img-top" alt="Charmeleon">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-danger">Fuego</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Charizard</h5>
+              <p class="card-text">N° #0006</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" class="card-img-top" alt="Charizard">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-danger">Fuego</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Squirtle</h5>
+              <p class="card-text">N° #0007</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" class="card-img-top" alt="Squirtle">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-primary">Agua</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Wartortle</h5>
+              <p class="card-text">N° #0008</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" class="card-img-top" alt="Wartortle">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-primary">Agua</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Blastoise</h5>
+              <p class="card-text">N° #0009</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" class="card-img-top" alt="Blastoise">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-primary">Agua</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Caterpie</h5>
+              <p class="card-text">N° #0010</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" class="card-img-top" alt="Caterpie">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Bicho</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Metapod</h5>
+              <p class="card-text">N° #0011</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" class="card-img-top" alt="Metapod">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Bicho</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Butterfree</h5>
+              <p class="card-text">N° #0012</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" class="card-img-top" alt="Butterfree">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Bicho</span>
+                <span class="badge bg-primary">Volador</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Weedle</h5>
+              <p class="card-text">N° #0013</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" class="card-img-top" alt="Weedle">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Bicho</span>
+                <span class="badge bg-danger">Veneno</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Kakuna</h5>
+              <p class="card-text">N° #0014</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" class="card-img-top" alt="Kakuna">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Bicho</span>
+                <span class="badge bg-danger">Veneno</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Beedrill</h5>
+              <p class="card-text">N° #0015</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" class="card-img-top" alt="Beedrill">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Bicho</span>
+                <span class="badge bg-danger">Veneno</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

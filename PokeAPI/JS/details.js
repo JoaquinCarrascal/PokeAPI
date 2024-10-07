@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var urlParams = new URLSearchParams(window.location.search);
-    console.log(urlParams.get("pid"));
-    var pokemonId = urlParams.get("pid");
+    console.log(urlParams.get("id"));
+    var pokemonId = urlParams.get("id");
 
     $.ajax({
         url: "https://pokeapi.co/api/v2/pokemon/"+ pokemonId +"/",

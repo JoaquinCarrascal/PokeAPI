@@ -22,52 +22,12 @@
 
 <body class="transparente">
     <div class="container mt-3">
-        <h3 class="text-center">Detalles del pokémon:</h3>
-            <div class="card mx-auto caja-ppal my-4">
-                <div class="card-header text-center ">
-                    <h5 class="card-title mb-0">Bulbasaur N°0001</h5>
-                </div>
-                <div class="card-body text-center">
-                    <div>
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-                            alt="Bulbasaur" class="img-fluid float-start fotoPokemon">
-                    </div>
 
-                    <ul class="list-group mt-3">
-                        <li class="list-group-item mb-1 p-3 fs-6 stats" style="width: 100%;"><strong>Altura:</strong>
-                            0.7m</li>
-                        <li class="list-group-item mb-1 p-3 fs-6 stats" style="width: 100%;"><strong>Categoria:
-                            </strong>Semilla</li>
-                        <li class="list-group-item mb-1 p-3 fs-6 stats" style="width: 100%;"><strong>Peso:</strong>
-                            6.9kg</li>
-                    </ul>
-                    <div class="container-fluid">
-                        <h6 class="col-6 just">Ataques:</h6>
-                        <div class="col-12 btn-group borde-habilidades" role="group" aria-label="Ataques">
-                            <button type="button" class="btn btn-especial fw-bold">Derribo</button>
-                            <button type="button" class="btn btn-especial fw-bold">Somnífero</button>
-                            <button type="button" class="btn btn-especial fw-bold">Ver más</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <div class="row text-center">
-                        <div class="col-6">
-                            <h6>Tipo</h6>
-                            <span class="badge bg-success">Planta</span>
-                            <span class="badge bg-danger">Veneno</span>
-                        </div>
-                        <div class="col-6">
-                            <h6>Debilidad</h6>
-                            <span class="badge bg-danger">Fuego</span>
-                            <span class="badge bg-info">Psíquico</span>
-                            <span class="badge bg-primary">Volador</span>
-                            <span class="badge bg-secondary">Hielo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h3 class="text-center" id="data-content">Detalles del pokémon:</h3>
+        
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JS/details.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

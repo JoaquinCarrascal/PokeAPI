@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeAPI Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../CSS/index.css" rel="stylesheet">
+</head>
+
+<header>
+  <div class="container-fluid">
+    <div class="row justify-content-center mb-4">
+      <div class="col-auto">
+        <img src="../../IMG/PokeAPI Logo.png" alt="PokeAPI Logo" id="logo">
+      </div>
+    </div>
+  </div>
+</header>
+
+<body class="transparente " style="background-size: cover; background-attachment: fixed;">
+  <div class="container">
+
+
+    <div class="row row-cols-2 row-cols-md-4 g-4 px-5">
+      <div class="col py-3">
+        <a href="poke-details.html" class="text-decoration-none text-dark">
+          <div class="card shadow-lg h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mt-2">Bulbasaur</h5>
+              <p class="card-text">N° #0001</p>
+              <div class="imagen-circulo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  class="card-img-top" alt="Bulbasaur">
+              </div>
+              <div class="py-3">
+                <span class="badge bg-success">Planta</span>
+                <span class="badge bg-secondary">Veneno</span>
+              </div>
+              <div>
+                <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3"
+                  href="./poke-details.html"><span>Ver Detalles</span></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

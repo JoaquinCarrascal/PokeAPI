@@ -59,7 +59,7 @@ $(document).ready(function() {
                     pokemonContainer.empty();
                     var pokeId = pokemon.id.toString();
                     var pokeName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-                    var pokeImage = pokemon.sprites.front_default;
+                    var pokeImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeId}.png`;
 
                     var pokemonCard = `
                         <div class="col py-3">

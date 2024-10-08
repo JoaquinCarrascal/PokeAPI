@@ -32,7 +32,7 @@ $(document).ready(function () {
 
                 <ul class="list-group mt-3">
                     <li class="list-group-item mb-1 p-3 fs-6 stats" style="width: 100%;"><strong>Altura:</strong>
-                        ${resp.height} dm</li>
+                        ${resp.height} cm</li>
                     <li class="list-group-item mb-1 p-3 fs-6 stats" style="width: 100%;"><strong>Categoria:
                         </strong>${capitalizeFirstLetter(resp.species.name)}</li>
                     <li class="list-group-item mb-1 p-3 fs-6 stats" style="width: 100%;"><strong>Peso:</strong>

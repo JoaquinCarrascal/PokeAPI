@@ -1,9 +1,11 @@
 $(document).ready(function() {
     getAllPokemons();
 
-    function getAllPokemons() {
+    var offset = 0;
+
+    function getAllPokemons(offset) {
         $.ajax({
-            url: "https://pokeapi.co/api/v2/pokemon?limit=20",
+            url: "https://pokeapi.co/api/v2/pokemon?limit=12&offset=" + offset,
             method: "GET",
         }).done(function(resp) {
             var listadoPokemon = resp.results;
@@ -37,6 +39,13 @@ $(document).ready(function() {
             });
         });
     }
+
+    $('#see-more').click(function() {
+
+        offset += 10;
+        getAllPokemons(offset);
+
+    });
 
     
     $('#search-button').click(function() {

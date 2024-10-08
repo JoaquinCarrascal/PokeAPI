@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     $('#see-more').click(function() {
 
-        offset += 10;
+        offset += 12;
         getAllPokemons(offset);
 
     });

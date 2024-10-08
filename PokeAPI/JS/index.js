@@ -22,7 +22,7 @@ $(document).ready(function() {
                                 <div class="card-body text-center">
                                     <h5 class="card-title mt-2">${pokeName}</h5>
                                     <p class="card-text">N° #${pokeId.padStart(4, '0')}</p>
-                                    <div class="imagen-circulo">
+                                    <div class="imagen-circulo shadow-lg">
                                             <img src="${pokeImage}" class="card-img-top" alt="${pokeName}">
                                     </div>
                                   

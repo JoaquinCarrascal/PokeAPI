@@ -27,7 +27,7 @@ $(document).ready(function() {
                                     </div>
                                   
                                     <div class="p-3">
-                                        <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="poke-details.html?id=${pokeId}"><span>Ver Detalles</span></a>
+                                        <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3 border-0 shadow" href="poke-details.html?id=${pokeId}"><span>Ver Detalles</span></a>
                                     </div>
                                 </div>
                             </div>

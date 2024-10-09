@@ -9,11 +9,18 @@ $(document).ready(function () {
       }).done(function (resp) {
           $("#data-content").html("");
           var typesHtml = '';
+          var abilitiesHtml = '';
           var typeInfo = resp.types;
+          var abilitiesList = resp.abilities;
           //debugger;
             typeInfo.forEach(function (typeInfo) {
             typesHtml += `<span class="badge bg-light text-dark">${capitalizeFirstLetter(typeInfo.type.name)}</span> `;
             //debugger;
+            });
+            
+            abilitiesList.slice(0, 3).forEach(function (abilitiesList) {
+                abilitiesHtml += `<button type="button" class="btn btn-especial fw-bold">${capitalizeFirstLetter(abilitiesList.ability.name)}</button>`;
+                //debugger;
             });
             function capitalizeFirstLetter(string) {
                 return string.charAt(0).toUpperCase() + string.slice(1);
@@ -41,9 +48,7 @@ $(document).ready(function () {
                 <div class="container-fluid">
                     <h6 class="col-6 just mx-auto text-center">Ataques:</h6>
                     <div class="col-12 btn-group borde-habilidades" role="group" aria-label="Ataques">
-                        <button type="button" class="btn btn-especial fw-bold">Derribo</button>
-                        <button type="button" class="btn btn-especial fw-bold">Somnífero</button>
-                        <button type="button" class="btn btn-especial fw-bold">Ver más</button>
+                        ${abilitiesHtml}
                     </div>
                 </div>
             </div>

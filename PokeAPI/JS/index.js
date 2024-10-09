@@ -14,6 +14,10 @@ $(document).ready(function() {
                 var pokeId = pokemon.url.split("/")[6];
                 var pokeName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
                 var pokeImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeId}.png`;
+                /*const colorThief = new ColorThief();
+                const dominantColor = colorThief.getColor(pokeImage);
+                const colorDom = `rgb(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]})`;
+                style="background-color:${colorDom}*/
 
                 var pokemonCard = `
                     <div class="col py-3">
@@ -22,12 +26,12 @@ $(document).ready(function() {
                                 <div class="card-body text-center">
                                     <h5 class="card-title mt-2">${pokeName}</h5>
                                     <p class="card-text">N° #${pokeId.padStart(4, '0')}</p>
-                                    <div class="imagen-circulo shadow-lg">
+                                    <div class="imagen-circulo shadow-lg" >
                                             <img src="${pokeImage}" class="card-img-top" alt="${pokeName}">
                                     </div>
                                   
                                     <div class="p-3">
-                                        <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3" href="poke-details.html?id=${pokeId}"><span>Ver Detalles</span></a>
+                                        <a class="text-decoration-none text-dark btn-ver-detalles py-1 px-2 rounded-3 border-0 shadow" href="poke-details.html?id=${pokeId}"><span>Ver Detalles</span></a>
                                     </div>
                                 </div>
                             </div>
